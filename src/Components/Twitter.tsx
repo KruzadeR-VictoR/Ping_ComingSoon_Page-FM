@@ -7,7 +7,7 @@ function Twitter({ color,size }: { color: string,size: string }) {
         xmlnsXlink="http://www.w3.org/1999/xlink"
         enable-background="new 0 0 56.693 56.693"
         height={size}
-        id="Layer_1"
+        id="Layer_3"
         version="1.1"
         viewBox="0 0 56.693 56.693"
         width="56.693px"

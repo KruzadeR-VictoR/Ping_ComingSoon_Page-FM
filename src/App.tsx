@@ -32,7 +32,7 @@ function App() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleSubmit = (e: any) => {
-    e.preventDefault();    
+    e.preventDefault();
     if (
       value &&
       value.match(
@@ -41,8 +41,10 @@ function App() {
     ) {
       setisError(false);
       onOpen();
-      setValue("");      
-    } else setisError(true);
+      // setValue("");
+    } else {
+      setisError(true);
+    }
   };
   return (
     <>
@@ -53,7 +55,7 @@ function App() {
           align={"center"}
           justify={"center"}
           py={"4rem"}
-          px={"2rem"}          
+          px={"2rem"}
           maxW={"40rem"}
         >
           <Image src={logo} alt="logo" w={"4rem"} h={"100%"} mt={[5, 0]} />
@@ -207,8 +209,16 @@ function App() {
                   color={"gray.500"}
                 >
                   Thank you for Subscribing, we'll notify you about upcoming
-                  events and activities on
-                  <span style={{ whiteSpace: "nowrap" }}> {value}</span>
+                  events and activities on&nbsp;
+                  <span
+                    style={{
+                      whiteSpace: "nowrap",
+                      color: "black",
+                      fontWeight: "600",
+                    }}
+                  >
+                    {value && value}
+                  </span>
                 </Text>
                 <Button
                   leftIcon={<ArrowBackIcon />}

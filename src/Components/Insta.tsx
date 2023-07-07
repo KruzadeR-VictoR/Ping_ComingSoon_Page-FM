@@ -5,7 +5,7 @@ function Insta({ color, size }: { color: string; size: string }) {
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         version={size}
-        id="Layer_1"
+        id="Layer_2"
         height="1.5rem"
         x="0px"
         y="0px"
